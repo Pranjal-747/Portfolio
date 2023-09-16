@@ -1,0 +1,88 @@
+#project {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.projectTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.projectTitle:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.projectDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.projectBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.projectBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Transitions */
+    border: 2px solid transparent; /* Initial border */
+}
+
+.projectBarText > p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.projectBar:hover {
+    transform: scale(1.05); /* Hover animation */
+    opacity: 0.9; /* Reduce opacity on hover */
+    border-color: yellow; /* Change border color on hover */
+    border-width: 5px; /* Increase border width on hover */
+    background-color: rgb(50, 50, 50); /* Restore original background color on hover */
+}
+
+.projectBarText h2,
+.projectBarText h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+.projectBarText {
+    transition: color 0.3s ease, font-size 0.3s ease; /* Text transition */
+}
+
+.projectBar:hover .projectBarText {
+    color: yellow; /* Change text color on hover */
+    font-size: 1.1rem; /* Increase font size on hover */
+}
+
+@media screen and (max-width: 580px) {
+    .projectBarText > p {
+        font-size: 3vw;
+    }
+    .projectBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .projectBarText > h2 {
+        font-size: 5vw;
+    }
+}

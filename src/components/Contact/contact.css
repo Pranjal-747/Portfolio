@@ -1,0 +1,62 @@
+/* Contact.css */
+
+/* Styling for the entire contact section */
+#contactPage {
+  background-color: rgb(40, 40, 40);
+  padding: 50px 0;
+  text-align: center;
+  color: #fff; /* Text color set to white for better contrast on dark background */
+}
+
+/* Styling for the container div */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Styling for each contact item */
+.contact-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #fff; /* Link color set to white */
+  transition: color 0.3s ease;
+  display: block; /* Ensures the entire block is clickable */
+}
+
+.contact-item a:hover {
+  color: #0077B5; /* LinkedIn blue color on hover */
+}
+
+.contact-item img {
+  max-width: 80px; /* Adjust the size of the logo images as needed */
+  margin-bottom: 10px;
+}
+
+.contact-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the phone number and email */
+.contact-item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
