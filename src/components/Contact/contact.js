@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import link from '../../assets/linkedin.png';
-import mobile from '../../assets/mobile.png';
+
 import gmail from '../../assets/email.png';
 
 const Contact = () => {
@@ -15,13 +15,6 @@ const Contact = () => {
             <img src={link} alt="LinkedIn" />
             <h4>LinkedIn</h4>
           </a>
-        </div>
-        <div className="contact-item">
-          <a href="tel:+11234567890">
-            <img src={mobile} alt="Mobile" />
-            <h4>Phone</h4>
-          </a>
-          <p>6392228132</p>
         </div>
         <div className="contact-item">
           <a href="mailto:youremail@example.com">
